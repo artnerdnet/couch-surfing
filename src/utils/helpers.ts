@@ -1,0 +1,27 @@
+import { TReview, TReviewData } from "../types/types";
+
+export const getReviewsData = (reviews: TReview[]): TReviewData => {
+  const latestReview = getLatestReview(reviews);
+  return {
+    count: reviews.length,
+    latestReview,
+  };
+};
+
+export const getLatestReview = (reviews: TReview[]): TReview => {
+  return reviews.reduce((a, b) => (a.date > b.date ? a : b));
+};
+
+export const calculateAverage = (numbers: number[]): number => {
+  const sum = numbers.reduce((a, b) => a + b, 0);
+  const average = Math.round((sum / numbers.length || 0) * 100) / 100;
+  return average;
+};
+
+export const getRandomItemsFromArray = (
+  arr: unknown[],
+  count: number
+): unknown[] => {
+  const shuffled = arr.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+};

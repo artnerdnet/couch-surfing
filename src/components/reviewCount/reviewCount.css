@@ -1,0 +1,15 @@
+.c-reviewCount__container {
+  display: flex;
+  flex-flow: column;
+  margin: 14px;
+}
+
+.c-reviewCount__lastReview {
+  display: flex;
+  align-items: center;
+}
+
+.c-reviewCount__loyaltyIndicator {
+  height: 15px;
+  width: 15px;
+}

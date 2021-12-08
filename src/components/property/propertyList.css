@@ -1,0 +1,17 @@
+.c-propertyList__container {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(1, auto);
+  margin: 14px;
+}
+
+@media only screen and (min-width: 600px) {
+  .c-propertyList__container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .c-propertyList__container {
+    grid-template-columns: repeat(3, auto);
+  }
+}
