@@ -1,8 +1,8 @@
-import { TProperty } from "../../types/types";
+import { IProperty } from "../../types/types";
 import "./propertyList.css";
 import Property from "./property";
 
-const PropertyList: React.FunctionComponent<{ list: TProperty[] }> = ({
+const PropertyList: React.FunctionComponent<{ list: IProperty[] }> = ({
   list,
 }) => {
   return (

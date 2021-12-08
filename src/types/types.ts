@@ -1,16 +1,23 @@
-export type TReview = {
+export interface IReview {
   name: string;
   stars: number;
   loyaltyUser: boolean;
   date: string;
-};
+}
 
 export type TReviewData = {
   count: number;
-  latestReview: TReview;
+  latestReview: IReview;
 };
 
-export type TProperty = {
+export interface IContactDetails {
+  name: string;
+  address: string;
+  phone: number;
+  areaCode: number;
+  email: string;
+}
+export interface IProperty {
   title: string;
   images: string[];
   price: number;
@@ -18,16 +25,10 @@ export type TProperty = {
   city: string;
   postcode: string;
   country: string;
-  contactDetails: {
-    name: string;
-    address: string;
-    phone: number;
-    areaCode: number;
-    email: string;
-  };
+  contactDetails: IContactDetails;
   available: boolean;
-  reviews: TReview[];
-};
+  reviews: IReview[];
+}
 
 export type TGalleryImage = {
   original: string;
@@ -35,10 +36,16 @@ export type TGalleryImage = {
   thumbnail?: string;
 };
 
-export type TUser = {
+export enum EUserPermissions {
+  ADMIN,
+  READ_ONLY,
+}
+
+export interface IUser {
   user: {
     firstName: string;
     lastName: string;
   };
   isReturning: boolean;
-};
+  permissions: EUserPermissions.ADMIN | EUserPermissions.READ_ONLY;
+}

@@ -1,7 +1,7 @@
-import { TUser } from "../../types/types";
+import { IUser } from "../../types/types";
 import "./navbar.css";
 
-const Navbar: React.FunctionComponent<{ currentUser: TUser }> = ({
+const Navbar: React.FunctionComponent<{ currentUser: IUser }> = ({
   currentUser,
 }) => (
   <div className="c-nav__bar">
@@ -11,7 +11,7 @@ const Navbar: React.FunctionComponent<{ currentUser: TUser }> = ({
     </div>
     <h3 className="c-nav__userContainer">
       <span>
-        {currentUser.isReturning ? "Welcome back" : "Welcome"}{" "}
+        {currentUser.isReturning ? "Welcome back" : "Welcome"}
         {currentUser.user.firstName}!
       </span>
     </h3>

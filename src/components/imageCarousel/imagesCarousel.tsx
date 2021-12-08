@@ -3,10 +3,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { TGalleryImage } from "../../types/types";
 
-type TImagesCarouselProps = {
+interface TImagesCarouselProps {
   images: TGalleryImage[];
   showThumbs?: boolean;
-};
+}
 
 const ImagesCarousel: React.FunctionComponent<TImagesCarouselProps> = ({
   images,

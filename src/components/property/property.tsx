@@ -1,15 +1,15 @@
-import { TGalleryImage, TProperty } from "../../types/types";
+import { TGalleryImage, IProperty } from "../../types/types";
 import "./property.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import ImagesCarousel from "../imageCarousel/imagesCarousel";
 import ReviewCount from "../reviewCount/reviewCount";
 
-const formatImages = (images: string[], alt: string): TGalleryImage[] | any =>
+const formatImages = (images: string[], alt: string): TGalleryImage[] =>
   images.map((image) => {
     return { original: image, alt };
   });
 
-const Property: React.FunctionComponent<{ property: TProperty }> = ({
+const Property: React.FunctionComponent<{ property: IProperty }> = ({
   property,
 }) => {
   const {

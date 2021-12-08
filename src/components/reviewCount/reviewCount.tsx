@@ -1,9 +1,9 @@
-import { TReview } from "../../types/types";
+import { IReview } from "../../types/types";
 import LoyaltyUserLogo from "../../assets/seal.png";
 import "./reviewCount.css";
 import { calculateAverage, getReviewsData } from "../../utils/helpers";
 
-const ReviewCount: React.FunctionComponent<{ reviews: TReview[] }> = ({
+const ReviewCount: React.FunctionComponent<{ reviews: IReview[] }> = ({
   reviews,
 }) => {
   const formattedReviews = getReviewsData(reviews);

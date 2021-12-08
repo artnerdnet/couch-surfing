@@ -59,3 +59,7 @@ button:hover {
   color: rgb(83, 83, 83);
   background-color: #fec3a6;
 }
+
+hr {
+  border: 2px solid #cdeac0;
+}

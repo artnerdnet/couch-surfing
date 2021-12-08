@@ -1,6 +1,6 @@
-import { TReview, TReviewData } from "../types/types";
+import { IReview, TReviewData } from "../types/types";
 
-export const getReviewsData = (reviews: TReview[]): TReviewData => {
+export const getReviewsData = (reviews: IReview[]): TReviewData => {
   const latestReview = getLatestReview(reviews);
   return {
     count: reviews.length,
@@ -8,7 +8,7 @@ export const getReviewsData = (reviews: TReview[]): TReviewData => {
   };
 };
 
-export const getLatestReview = (reviews: TReview[]): TReview => {
+export const getLatestReview = (reviews: IReview[]): IReview => {
   return reviews.reduce((a, b) => (a.date > b.date ? a : b));
 };
 
@@ -19,9 +19,9 @@ export const calculateAverage = (numbers: number[]): number => {
 };
 
 export const getRandomItemsFromArray = (
-  arr: unknown[],
+  arr: string[] | number[],
   count: number
-): unknown[] => {
+): string[] | number[] => {
   const shuffled = arr.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 };
