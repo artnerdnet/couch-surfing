@@ -1,5 +1,6 @@
-# Getting Started with Create React App
+# Couch Surfing App
 
+This is an example with React for the [Typescript course](https://scrimba.com/learn/typescript) by [Ania Kubow](https://github.com/kubowania).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
