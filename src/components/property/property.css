@@ -12,11 +12,39 @@
   flex-flow: column;
   justify-content: space-between;
   margin: 12px 0;
+  width: 100%;
 }
 
 .c-property__header > h1,
 h2,
 h3,
 h4 {
+  margin: 2px 0;
+}
+
+.c-property__flag {
+  color: rgb(78, 78, 78);
+  border-radius: 8px;
+  background-color: #cdeac0;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  height: 10px;
+  padding: 6px;
+}
+
+.c-property__flag.unavailable {
+  background-color: #ff928b;
+}
+
+.c-property__rentInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-property__contact {
+  display: flex;
+  justify-content: space-between;
   margin: 4px 0;
+  width: 100%;
 }

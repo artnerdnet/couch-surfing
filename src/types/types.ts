@@ -34,3 +34,11 @@ export type TGalleryImage = {
   alt: string;
   thumbnail?: string;
 };
+
+export type TUser = {
+  user: {
+    firstName: string;
+    lastName: string;
+  };
+  isReturning: boolean;
+};

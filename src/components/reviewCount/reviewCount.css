@@ -1,7 +1,7 @@
 .c-reviewCount__container {
   display: flex;
   flex-flow: column;
-  margin: 14px;
+  margin: 8px 0;
 }
 
 .c-reviewCount__lastReview {

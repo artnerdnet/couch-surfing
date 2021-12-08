@@ -18,7 +18,6 @@ const Property: React.FunctionComponent<{ property: TProperty }> = ({
     price,
     publicAddress,
     city,
-    postcode,
     country,
     contactDetails,
     available,
@@ -29,17 +28,35 @@ const Property: React.FunctionComponent<{ property: TProperty }> = ({
   const formattedAddress = `${publicAddress}, ${city}, ${country}`;
 
   return (
-    <div className="c-property__container">
-      <div className="c-property__header">
-        <h2>{title}</h2>
-        <h3>Nearby: {formattedAddress}</h3>
-        <h4>
-          {price}€ per night, rented by {contactDetails.name}
-        </h4>
+    <>
+      <div className="c-property__container">
+        <div className="c-property__header">
+          <h2>{title}</h2>
+          <h3>Nearby: {formattedAddress}</h3>
+
+          <div className="c-property__rentInfo">
+            <h4>
+              {price}€ per night, rented by {contactDetails.name}
+            </h4>
+            <span
+              className={
+                available ? "c-property__flag" : "c-property__flag unavailable"
+              }
+            >
+              {available ? "available" : "unavailable"}
+            </span>
+          </div>
+        </div>
+        <ImagesCarousel images={formattedImages} />
+
+        <div className="c-property__contact">
+          <ReviewCount reviews={reviews} />
+          <a href={`mailto:${contactDetails.email}`}>
+            <button>contact by email</button>
+          </a>
+        </div>
       </div>
-      <ImagesCarousel images={formattedImages} />
-      <ReviewCount reviews={reviews} />
-    </div>
+    </>
   );
 };
 

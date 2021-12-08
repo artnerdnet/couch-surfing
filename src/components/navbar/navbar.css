@@ -1,0 +1,28 @@
+.c-nav__bar {
+  width: 100%;
+  position: sticky;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 12%) 0 1px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-nav__logoContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-nav__logo {
+  height: 45px;
+  width: 45px;
+  background-size: 47px;
+  background-image: url("../../assets/sofa-logo.png");
+  margin: 20px;
+}
+
+.c-nav__userContainer {
+  margin: 20px;
+}

@@ -12,33 +12,12 @@ body {
   margin: 20px;
 }
 
-.nav-bar {
-  width: 100%;
-  position: sticky;
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 12%) 0 1px 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  height: 45px;
-  width: 45px;
-  background-size: 47px;
-  background-image: url("./assets/sofa-logo.png");
-  margin: 20px;
-}
-
-.user-container {
-  margin: 20px;
-}
-
 h1,
 h2,
 h3,
-h4 {
-  line-height: 0;
+h4,
+h5 {
+  margin: 0;
 }
 
 h1 {
@@ -49,6 +28,7 @@ h1 {
 h2 {
   font-size: 1.4rem;
   line-height: 1.6rem;
+  color: #ff928b;
 }
 
 h3 {
@@ -59,4 +39,23 @@ h3 {
 h4 {
   font-size: 1rem;
   line-height: 1.2rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+button {
+  color: rgb(83, 83, 83);
+  background-color: #ffac81;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: rgb(83, 83, 83);
+  background-color: #fec3a6;
 }

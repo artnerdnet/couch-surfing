@@ -10,7 +10,7 @@ import Faker from "faker";
 import { getRandomItemsFromArray } from "../utils/helpers";
 
 export const you = {
-  user: { firstName: Faker.name.firstName(), lastName: Faker.name.lastName },
+  user: { firstName: Faker.name.firstName(), lastName: Faker.name.lastName() },
   isReturning: Math.random() < 0.5,
 };
 
