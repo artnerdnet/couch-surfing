@@ -1,4 +1,4 @@
-import { IUser } from "../../types/types";
+import { IUser } from "../../types/interfaces";
 import "./navbar.css";
 
 const Navbar: React.FunctionComponent<{ currentUser: IUser }> = ({

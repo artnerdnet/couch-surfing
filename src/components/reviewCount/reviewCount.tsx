@@ -1,4 +1,4 @@
-import { IReview } from "../../types/types";
+import { IReview } from "../../types/interfaces";
 import LoyaltyUserLogo from "../../assets/seal.png";
 import "./reviewCount.css";
 import { calculateAverage, getReviewsData } from "../../utils/helpers";

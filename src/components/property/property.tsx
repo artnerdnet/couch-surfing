@@ -1,8 +1,9 @@
-import { TGalleryImage, IProperty } from "../../types/types";
+import { TGalleryImage } from "../../types/types";
 import "./property.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import ImagesCarousel from "../imageCarousel/imagesCarousel";
 import ReviewCount from "../reviewCount/reviewCount";
+import { IProperty } from "../../types/interfaces";
 
 const formatImages = (images: string[], alt: string): TGalleryImage[] =>
   images.map((image) => {

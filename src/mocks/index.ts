@@ -8,7 +8,7 @@ import eighthImage from "../assets/pexels-photo-1743227.jpeg";
 
 import Faker from "faker";
 import { getRandomItemsFromArray } from "../utils/helpers";
-import { EUserPermissions } from "../types/types";
+import { EUserPermissions } from "../types/enums";
 
 export const you = {
   user: { firstName: Faker.name.firstName(), lastName: Faker.name.lastName() },

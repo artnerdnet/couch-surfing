@@ -1,4 +1,5 @@
-import { IReview, TReviewData } from "../types/types";
+import { IReview } from "../types/interfaces";
+import { TReviewData } from "../types/types";
 
 export const getReviewsData = (reviews: IReview[]): TReviewData => {
   const latestReview = getLatestReview(reviews);

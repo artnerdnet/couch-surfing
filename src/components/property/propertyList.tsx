@@ -1,4 +1,4 @@
-import { IProperty } from "../../types/types";
+import { IProperty } from "../../types/interfaces";
 import "./propertyList.css";
 import Property from "./property";
 
